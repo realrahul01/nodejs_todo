@@ -6,7 +6,7 @@ export const connectDB = () => {
       dbName: "backendapi",
     })
     .then((c) => {
-      console.log("Database is connected");
+      console.log(`Database is connected with ${c.connection.host}`);
     })
     .catch((error) => {
       console.log(error);
